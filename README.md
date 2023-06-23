@@ -1,33 +1,22 @@
 <div align="center">
   <h1>
-      <img
-          src="https://user-images.githubusercontent.com/42694704/196938815-ea5d1bdd-a2b8-4327-9b43-46d84920d381.png"
-          width="180"
-          alt="logo"
-      />
-      <br/>
-      One Monokai Nvim
+     Dark Flat Nvim
   </h1>
-  
-  VSCode One Monokai colorscheme written in Lua for Neovim.
+    Based on the amazing <a href="https://github.com/QuentinWatt/dark-flat-iterm-colors">Dark Flat Iterm2 </a> terminal theme.
 </div>
 
-![demo](https://user-images.githubusercontent.com/42694704/196934147-0704f7ec-456f-4a07-b44f-ac99896c7b22.png)
+</br>
+
+![demo](https://github.com/sekke276/dark_flat.nvim/assets/72869134/c908aa85-4320-41bc-95bc-4c3831f2f405)
 
 <p align = "center"><b>Normal background</b></p>
 
 <br />
 
-![transparent demo](https://user-images.githubusercontent.com/42694704/196934131-0c7134ec-7266-4200-bf5a-901cf5d28e12.png)
-
-<p align = "center"><b>Transparent background</b></p>
-
 ## :rocket: Installation
 
 ```lua
-{
-  "cpea2506/dark_flat.nvim",
-}
+{"sekke276/dark_flat.nvim"}
 ```
 
 ### Requirement
@@ -41,22 +30,14 @@
 vim.cmd.colorscheme "dark_flat"
 ```
 
-Or prefer below if you want to customize some options
-
-```lua
-require("dark_flat").setup({
-    -- your options
-})
-```
-
 ### Options
 
-| Option        | Description                   | Type                       | Note             |
-| ------------- | ----------------------------- | -------------------------- | ---------------- |
-| `transparent` | enable transparent background | `boolean`                  | N/A              |
-| `colors`      | custom colors                 | `table<string, string>`    | N/A              |
-| `themes`      | custom highlight groups       | `function(colors): tables` | `:h nvim_set_hl` |
-| `italics`     | enable italics                | `boolean`                  | N/A              |
+| Option        | Description                   | Type                       |
+| ------------- | ----------------------------- | -------------------------- |
+| `transparent` | enable transparent background | `boolean`                  |
+| `colors`      | custom colors                 | `table<string, string>`    |
+| `themes`      | custom highlight groups       | `function(colors): tables` |
+| `italics`     | enable italics                | `boolean`                  |
 
 ### Default
 
@@ -77,14 +58,6 @@ require("dark_flat").setup({
 
 1. [colors](lua/dark_flat/colors.lua#L7)
 2. [themes](lua/dark_flat/themes/groups.lua#L6)
-
-Color provides two method, `darken` and `lighten` to blend color based on provided
-alpha value. You can access them via:
-
-```lua
-colors["<color-name>"]:darken(alpha)
-colors["<color-name>"]:lighten(alpha)
-```
 
 #### Example
 
@@ -109,33 +82,8 @@ require("dark_flat").setup({
 })
 ```
 
-## :champagne: Plugins support
-
-- [Lualine](https://github.com/nvim-lualine/lualine.nvim)
-
-![lualine demo](https://user-images.githubusercontent.com/42694704/196934170-84a1f32c-f97b-4f00-859b-e822f4d14479.png)
-
-```lua
-require("lualine").setup {
-  options = {
-      -- ...other options
-      theme = "dark_flat"
-  }
-}
-```
-
 ## :eyes: Inspiration
 
-This is the best theme I’ve ever seen in my eyes. I’ve tried it written in Vim for a long time and decided to write it in Lua for compatibility with Neovim, and make it easy to do some custom changes.
+- [dark-flat-item-colors](https://github.com/QuentinWatt/dark-flat-iterm-colors)
+- [one_monokai.nvim](https://github.com/cpea2506/one_monokai.nvim)
 
-Thanks for these talented and amazing people:
-
-- [one-monokai-vim](https://github.com/fratajczak/one-monokai-vim)
-- [vscode one-monokai](https://github.com/azemoh/vscode-one-monokai)
-- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
-- [onedarkpro.nvim](https://github.com/olimorris/onedarkpro.nvim)
-
-## :scroll: Contribution
-
-Please see [the contributing guidelines](CONTRIBUTING.md) for detailed
-instructions on how to contribute to this colorscheme.

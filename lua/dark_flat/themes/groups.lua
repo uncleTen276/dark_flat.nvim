@@ -10,7 +10,7 @@ groups.default = {
     Constant = { fg = colors.aqua },
     Float = { fg = colors.purple },
     Number = { fg = colors.purple },
-    String = { fg = colors.yellow },
+    String = { fg = colors.light_yellow },
 
     StorageClass = { fg = colors.cyan },
     Structure = { fg = colors.cyan },
@@ -18,9 +18,9 @@ groups.default = {
     Typedef = { fg = colors.aqua },
 
     Function = { fg = colors.green },
-    Identifier = { fg = colors.green },
+    Identifier = { fg = colors.cyan },
 
-    Keyword = { fg = colors.cyan },
+    Keyword = { fg = colors.light_green },
     Label = { fg = colors.pink },
     Operator = { fg = colors.pink },
     Statement = { fg = colors.pink },
@@ -282,7 +282,7 @@ groups.default = {
     -- nvimtree
     NvimTreeBookmark = { fg = colors.yellow },
     NvimTreeEmptyFolderName = { link = "Directory" },
-    NvimTreeExecFile = { fg = colors.yellow, bold = true },
+    NvimTreeExecFile = { fg = colors.light_yellow, bold = true },
     NvimTreeFolderIcon = { fg = colors.yellow },
     NvimTreeFolderName = { link = "Directory" },
     NvimTreeGitDeleted = { fg = colors.red },
