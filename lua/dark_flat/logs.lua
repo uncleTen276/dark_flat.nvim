@@ -15,7 +15,7 @@ logs.error = {
 
         vim.schedule(function()
             logs.error.msg_displayed = vim.notify_once(message, vim.log.levels.ERROR, {
-                title = "One Monokai",
+                title = "Dark Flat",
             })
         end)
     end,

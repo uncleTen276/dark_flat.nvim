@@ -153,7 +153,9 @@ groups.default = {
     ["@type.qualifier"] = { link = "Type" },
     ["@variable"] = { fg = colors.fg },
     ["@variable.builtin"] = { fg = colors.pink },
-
+    -- ts
+    ["@include.tsx"] = { fg = colors.white:darken(0.8) },
+    ["@include.typescript"] = { fg = colors.white:darken(0.8) },
     -- semantic tokens
     ["@lsp.mod.deprecated"] = { fg = colors.light_gray, strikethrough = true },
     ["@lsp.mod.documentation"] = { link = "@constant" },
